@@ -1,19 +1,56 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Markdown from '../components/Markdown.astro';
-
-const explainer = `
-An Astro website can go way beyond static pages - on the right platform.
-
-Netlify supports not only [Streaming SSR](https://docs.astro.build/en/guides/server-side-rendering/#html-streaming) and fast [Edge Middleware](https://docs.astro.build/en/guides/middleware/), but also [on-demand revalidation](https://www.netlify.com/blog/cache-tags-and-purge-api-on-netlify/) and [stale-while-revalidate](https://www.netlify.com/blog/swr-and-fine-grained-cache-control/). 
-Any page or data can be rebuilt only when needed, without site visitors ever getting a performance hit.
-`;
 ---
 
-<Layout title="Welcome to Astro.">
-    <h1 class="mb-10">Netlify Platform Starter for Astro</h1>
-    <Markdown content={explainer} class="mb-10 text-lg" />
-    <p>
-        <a href="https://docs.netlify.com/frameworks/astro/" class="btn btn-lg sm:min-w-64">Read the Docs</a>
-    </p>
+<Layout title="TruLine Restoration Group | Water, Fire & Mold Restoration">
+
+<section style="padding: 100px 20px; text-align: center; background: linear-gradient(135deg, #0f2d52, #1b4f8a); color: white;">
+  <h1 style="font-size: 48px; font-weight: 700;">
+    24/7 Emergency Restoration Services
+  </h1>
+  <p style="font-size: 20px; margin-top: 20px;">
+    Water Damage • Fire Damage • Mold Remediation • Reconstruction
+  </p>
+  <a href="/contact" style="display:inline-block; margin-top:30px; padding:15px 30px; background:#00a3e0; color:white; text-decoration:none; border-radius:6px;">
+    Request Immediate Service
+  </a>
+</section>
+
+<section style="padding:80px 20px; text-align:center;">
+  <h2 style="font-size:36px; color:#0f2d52;">Why Choose TruLine?</h2>
+  <p style="max-width:800px; margin:20px auto; font-size:18px;">
+    TruLine Restoration Group provides professional mitigation and restoration services
+    across Tennessee, Mississippi, and Arkansas. We respond quickly, document thoroughly,
+    and work directly with insurance carriers to streamline your claim.
+  </p>
+</section>
+
+<section style="padding:80px 20px; background:#f4f7fa;">
+  <div style="max-width:1000px; margin:auto; display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:40px;">
+    
+    <div>
+      <h3 style="color:#0f2d52;">Water Damage Mitigation</h3>
+      <p>Emergency extraction, structural drying, moisture monitoring, and documentation.</p>
+    </div>
+
+    <div>
+      <h3 style="color:#0f2d52;">Fire & Smoke Restoration</h3>
+      <p>Structural cleaning, debris removal, odor control, and rebuild services.</p>
+    </div>
+
+    <div>
+      <h3 style="color:#0f2d52;">Mold Remediation</h3>
+      <p>Containment, removal, air scrubbing, and preventative solutions.</p>
+    </div>
+
+  </div>
+</section>
+
+<section style="padding:100px 20px; text-align:center; background:#0f2d52; color:white;">
+  <h2 style="font-size:36px;">Serving TN • MS • AR</h2>
+  <p style="margin-top:20px; font-size:18px;">
+    Licensed & Insured • Insurance Coordination Available
+  </p>
+</section>
+
 </Layout>
