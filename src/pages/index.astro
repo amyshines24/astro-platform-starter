@@ -1,52 +1,103 @@
-<Layout title="TruLine Restoration Group | Water, Fire & Mold Restoration">
+---
+import Layout from "../layouts/Layout.astro";
+---
 
-<section style="padding: 100px 20px; text-align: center; background: linear-gradient(135deg, #0f2d52, #1b4f8a); color: white;">
-  <h1 style="font-size: 48px; font-weight: 700;">
-    24/7 Emergency Restoration Services
-  </h1>
-  <p style="font-size: 20px; margin-top: 20px;">
-    Water Damage • Fire Damage • Mold Remediation • Reconstruction
-  </p>
-  <a href="/contact" style="display:inline-block; margin-top:30px; padding:15px 30px; background:#00a3e0; color:white; text-decoration:none; border-radius:6px;">
-    Request Immediate Service
-  </a>
-</section>
+<Layout title="TruLine Restoration Group | Water, Fire, Mold Restoration">
+  <main class="wrap">
+    <header class="hero">
+      <div class="heroText">
+        <p class="pill">24/7 Emergency Response • TN • MS • AR</p>
+        <h1>Restoration done right—fast, documented, and insurance-ready.</h1>
+        <p class="sub">
+          Water damage mitigation, dry-out, and rebuild support with clear documentation,
+          moisture tracking, and professional estimating.
+        </p>
 
-<section style="padding:80px 20px; text-align:center;">
-  <h2 style="font-size:36px; color:#0f2d52;">Why Choose TruLine?</h2>
-  <p style="max-width:800px; margin:20px auto; font-size:18px;">
-    TruLine Restoration Group provides professional mitigation and restoration services
-    across Tennessee, Mississippi, and Arkansas. We respond quickly, document thoroughly,
-    and work directly with insurance carriers to streamline your claim.
-  </p>
-</section>
+        <div class="ctaRow">
+          <a class="btn primary" href="#contact">Request a Quote</a>
+          <a class="btn ghost" href="#services">View Services</a>
+        </div>
 
-<section style="padding:80px 20px; background:#f4f7fa;">
-  <div style="max-width:1000px; margin:auto; display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:40px;">
-    
-    <div>
-      <h3 style="color:#0f2d52;">Water Damage Mitigation</h3>
-      <p>Emergency extraction, structural drying, moisture monitoring, and documentation.</p>
-    </div>
+        <div class="trust">
+          <span>Licensed & Insured</span>
+          <span>COI Available</span>
+          <span>W-9 Available</span>
+          <span>Documentation Included</span>
+        </div>
+      </div>
 
-    <div>
-      <h3 style="color:#0f2d52;">Fire & Smoke Restoration</h3>
-      <p>Structural cleaning, debris removal, odor control, and rebuild services.</p>
-    </div>
+      <div class="heroCard">
+        <h3>Emergency Call?</h3>
+        <p class="small">Call or text:</p>
+        <a class="phone" href="tel:9015042807">(901) 504-2807</a>
+        <p class="small muted">Or email: info@truline-rg.pro</p>
+      </div>
+    </header>
 
-    <div>
-      <h3 style="color:#0f2d52;">Mold Remediation</h3>
-      <p>Containment, removal, air scrubbing, and preventative solutions.</p>
-    </div>
+    <section id="services" class="section">
+      <h2>Services</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Water Mitigation</h3>
+          <p>Extraction, dry-out, dehumidification, containment, monitoring, and moisture logs.</p>
+        </article>
+        <article class="card">
+          <h3>Fire & Smoke</h3>
+          <p>Demo planning, deodorization coordination, contents support, rebuild planning.</p>
+        </article>
+        <article class="card">
+          <h3>Mold Support</h3>
+          <p>Containment planning, documentation, and rebuild-ready scopes (as permitted).</p>
+        </article>
+        <article class="card">
+          <h3>Rebuild</h3>
+          <p>Drywall, flooring, trim, paint, cabinets—coordinated from scope to completion.</p>
+        </article>
+      </div>
+    </section>
 
-  </div>
-</section>
-
-<section style="padding:100px 20px; text-align:center; background:#0f2d52; color:white;">
-  <h2 style="font-size:36px;">Serving TN • MS • AR</h2>
-  <p style="margin-top:20px; font-size:18px;">
-    Licensed & Insured • Insurance Coordination Available
-  </p>
-</section>
-
+    <section id="contact" class="section contact">
+      <div class="contactBox">
+        <h2>Get a fast response</h2>
+        <p>Send photos + a short description. We’ll schedule an inspection and provide next steps.</p>
+        <div class="ctaRow">
+          <a class="btn primary" href="tel:9015042807">Call Now</a>
+          <a class="btn ghost" href="mailto:info@truline-rg.pro">Email Photos</a>
+        </div>
+      </div>
+    </section>
+  </main>
 </Layout>
+
+<style>
+  :global(body){ background:#0b1220; color:#eaf1ff; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial; }
+  .wrap{ max-width:1100px; margin:0 auto; padding:48px 20px 80px; }
+  .hero{ display:grid; grid-template-columns: 1.3fr .7fr; gap:24px; align-items:start; }
+  .pill{ display:inline-block; padding:8px 12px; border-radius:999px; background:rgba(59,130,246,.18); border:1px solid rgba(59,130,246,.35); color:#cfe3ff; font-size:13px; }
+  h1{ font-size:48px; line-height:1.05; margin:14px 0 12px; }
+  .sub{ font-size:18px; color:#c7d6f5; max-width:62ch; }
+  .ctaRow{ display:flex; gap:12px; margin:18px 0 10px; flex-wrap:wrap; }
+  .btn{ display:inline-flex; align-items:center; justify-content:center; padding:12px 16px; border-radius:12px; text-decoration:none; font-weight:600; }
+  .primary{ background:#2f6bff; color:white; }
+  .ghost{ background:transparent; border:1px solid rgba(255,255,255,.18); color:#eaf1ff; }
+  .trust{ display:flex; gap:12px; flex-wrap:wrap; margin-top:10px; color:#a9c0ef; font-size:13px; }
+  .heroCard{ background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.12); border-radius:18px; padding:18px; }
+  .phone{ display:block; font-size:22px; font-weight:800; color:#eaf1ff; text-decoration:none; margin:10px 0; }
+  .small{ font-size:13px; color:#c7d6f5; margin:0; }
+  .muted{ color:#9fb4e4; }
+  .section{ margin-top:56px; }
+  h2{ font-size:28px; margin:0 0 14px; }
+  .grid{ display:grid; grid-template-columns: repeat(4, 1fr); gap:12px; }
+  .card{ background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.12); border-radius:16px; padding:16px; }
+  .card h3{ margin:0 0 6px; font-size:16px; }
+  .card p{ margin:0; color:#c7d6f5; font-size:14px; }
+  .contactBox{ background:linear-gradient(135deg, rgba(47,107,255,.22), rgba(0,0,0,0)); border:1px solid rgba(47,107,255,.25); border-radius:18px; padding:22px; }
+  @media (max-width: 900px){
+    .hero{ grid-template-columns: 1fr; }
+    .grid{ grid-template-columns: 1fr 1fr; }
+    h1{ font-size:38px; }
+  }
+  @media (max-width: 520px){
+    .grid{ grid-template-columns: 1fr; }
+  }
+</style>
